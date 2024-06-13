@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic 8 Ball</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="icon" type="image/x-icon" href="Resources\favicon.png">
+</head>
+<body>
+    <div class="container">
+    <h1 class="title">Pixel Vision</h1>
+    <form id="magic8BallForm">
+        <div class="input"><label for="userName">How may I call you?</label>
+        <input type="text" id="userName" name="userName" placeholder="Tell me your name... or not">
+        <br><br></div>
+        <div class= 'input'><label for="userQuestion" >What is troubling you?</label>
+        <input type="text" id="userQuestion" name="userQuestion" placeholder="Share your enigma!" title="Tell me your deepest fears...">
+        <br><br></div>
+        <button type="submit" id="submit">Ask the Future Facilitator</button>
+    </form>
+    <br>
+    <div class="fade-in-text">
+    <div id="result1"></div>
+    <div id="result2"></div></div>
+    <div id="result3" class="anim-typewriter"></div>
+    </div>
+    <script src="magic8Ball.js"></script>
+</body>
+</html>

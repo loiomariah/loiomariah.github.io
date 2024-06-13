@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+.pixelify-sans-pixelify {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: url('cursor.cur'), auto;
+  }
+body{
+    background-color: #AE4762;
+     background-image: url("animation.gif");
+     background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+
+}
+
+.container { 
+ margin: auto;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  flex-direction: column;
+  flex-direction: column;
+  cursor: url('cursor.cur'), auto;
+}
+
+
+.title{
+color: #D5DFCD;
+text-shadow: 2px 2px #182125;
+font-family: "Pixelify Sans";
+font-size: 2.8em;
+margin-bottom: 35px;
+}
+label{
+    color:#D5DFCD ;
+    font-family: "Pixelify Sans";
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 15px;
+    cursor: url('cursor.cur'), auto;
+   
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; 
+    
+}
+
+#userName, #userQuestion{
+    border-radius: 5px;
+    padding: 5px;
+    font-family: "Pixelify Sans";
+    
+}
+input::selection{
+    border-color: transparent;
+    background-color: transparent;
+    
+}
+input::placeholder{
+    color: #D5DFCD;
+    
+}
+input:active{
+    
+}
+
+#result1{
+    margin-bottom: 15px;
+}
+#result2{
+    margin-bottom: 50px;
+   
+}
+
+.fade-in-text {
+    font-family: "Pixelify Sans";
+    font-size: 1.7em;
+    color: #D5DFCD;
+    animation: fadeIn 5s;
+  text-align: center;
+  text-shadow: 2px 2px #182125;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    30% { opacity: 0; } 
+    100% { opacity: 1; }
+  }
+
+#result3{
+    font-family: "Pixelify Sans";
+    font-size: 2.5em;
+    position: relative;
+    width: 16em;
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-50%);
+    color:#ACB8D8;
+    text-shadow: 2px 2px #182125;
+    
+
+}
+  
+          
+.anim-typewriter {
+        animation: typewriter 4s steps(40) 1s 1 normal both,
+        blinkTextCursor 500ms steps(40) infinite normal;
+  }
+  
+  @keyframes typewriter {
+        from {
+              width: 0;
+        }
+        to {
+              width: 35em;
+        }
+  }
+  
+  @keyframes blinkTextCursor {
+        from {
+              border-right-color: rgba(255, 255, 255, 0.75);
+        }
+        to {
+              border-right-color: transparent;
+        }
+  }
+#submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    font-family: "Pixelify Sans";
+    background-color: #D5DFCD;
+    color: #182125;
+    border-color: white;
+    border-radius: 5px;
+    box-shadow: -5px 5px 0px #182125;
+    cursor: url('cursor.cur'), auto;
+}
